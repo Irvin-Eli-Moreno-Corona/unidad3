@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elemento{
+    background-color: cyan;
+    color: darkblue;
+    border: 1px solid white;
+    padding: 5px;
+    width: calc((100%)/4);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

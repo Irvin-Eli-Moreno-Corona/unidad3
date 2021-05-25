@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes, Videos y Audios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img id="imenu" src="/practica2/casa.png" alt="menu"></label>
+        <nav class="menu">
+            <ul>
+                <li class="n1"><a href="">Inicio</a></li>
+                <li class="n1"><a href="">Alumnos</a>
+                    <ul id="desp">
+                        <li><a href="">Calificaciones</a></li>
+                        <li><a href="">Grupos</a></li>
+                        <li><a href="">Materias</a></li>
+                    </ul>
+                </li>
+                <li class="n1"><a href="">Reportes</a></li>
+                <li class="n1"><a href="">Configuración</a></li>
+                <li class="n1"><a href="">Contacto</a></li>
+                <li class="n1"><a href="">Usuarios</a></li>
+                <li class="n1"><a href="">Acerca de...</a></li>
+                <li class="n1"><a href="">Ayuda</a></li>
+                <li class="n1"><a href="">Más Información</a></li>
+                <li class="n1"><a href="">Nuestro Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="imagenes">
+                <h3>Galería de Imágenes</h3>
+                <img id="im1" class="imagen" src="https://picsum.photos/id/1020/300/200" alt="">
+                <img id="im2" class="imagen" src="https://picsum.photos/id/335/300/200" alt="">
+                <img id="im3" class="imagen" src="https://picsum.photos/id/675/300/200" alt="">
+                <img id="im4" class="imagen" src="https://picsum.photos/id/1050/300/200" alt="">
+            </div>
+    
+            <div class="videos">
+                <h3>Galería de Videos</h3>
+                <video id="vi1" src="/practica2/molino.mp4" autoplay loop controls></video>
+                <video id="vi2" src="/practica2/montañas.mp4" autoplay loop controls></video>
+                <video id="vi3" src="/practica2/paisaje2.mp4" autoplay loop controls></video>
+                <video id="vi4" src="/practica2/olas.mp4" autoplay loop controls></video>       
+            </div>
+    
+            <div class="audios">
+                <h3>Galería de Audios</h3>
+                <audio id="au1" src="/practica2/ambient.mp3" autoplay loop controls></audio>
+                <audio id="au2" src="/practica2/triste.mp3" loop controls></audio>
+                <audio id="au3" src="/practica2/tecno.mp3" loop controls></audio>
+                <audio id="au4" src="/practica2/inovacion.mp3" loop controls></audio>
+                <audio id="au5" src="/practica2/piano.mp3" loop controls></audio>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.contenedor{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(75, 73, 73);
+    border: 2px solid yellow;
+    border-radius: 10px;
+    
+    /* flex direction: row; */
+    display: flex;
+    /* flex-wrap: wrap-reverse;*/
+
+    flex-flow: row wrap; 
+
+    /* justify-content: center;*/
+    /*align-items: center; Solo funciona con una linea*/
+
+    align-content: center; /*solo funciona si tienes 2 a mas lineas*/
+}
+
+.elemento{
+    width: 200px;
+    height: 40px;
+    background-color: lawngreen;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tres{
+    flex-grow: 1;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosF.css">
+</head>
+<body>
+    <h2>Manejo de Formularios</h2>
+    <div class="contenedor">
+    <fieldset id="principal">
+        <legend>Registro de Automóviles</legend>
+     <section id="uno">
+        <label for="marca">Marca del auto:</label>
+        <input type="text" name="marca" id="marca" required>
+        <br><br>
+        <label for="modelo" class="model">Modelo del auto:</label>
+        <input type="text" name="modelo" id="modelo" class="model" required>
+        <br><br>
+        <label for="fecha" class="fecha">Fecha de compra del auto:</label>
+        <input type="date" name="fecha" id="fecha" class="fecha" required>
+        <br><br>
+        <label for="codigo" class="cod">Código del auto:</label>
+        <input type="password" name="codigo" id="codigo" class="cod" required>
+        <br><br>
+        <label for="color" class="color">Color del auto:</label>
+        <input type="color" name="color" id="color" class="color" required>
+        <br><br> 
+        <label for="freno">Tipo de frenos que incluye:</label>
+        <input type="text" list="tipofreno" id="freno">
+        <datalist id="tipofreno">
+            <option value="Frenos de Disco"></option>
+            <option value="Frenos de Tambor"></option>
+            <option value="Frenos ABS"></option>
+        </datalist>
+        <br><br>
+        <label for="precio">Precio del auto:</label>
+        <input type="number" min="50000" max="500000" step="10000" name="precio" id="precio" required>
+     </section>
+
+     <section id="dos">
+        <label for="imagen" class="img">Imagen del auto:</label>
+        <input type="image" src="auto.png" alt="Auto" width="140px" height="80px" name="imagen" id="imagen" class="img" required>
+        <br><br>
+        <label for="descripcion" class="desc">Descripción del auto:</label><br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="desc"></textarea>
+        <br>
+        <label for="puertas">Cantidad de puertas:</label>
+        <select name="puertas" id="puertas">
+            <option value="2">2 Puertas</option>
+            <option value="4">4 Puertas</option>
+            <option value="5">5 Puertas</option>
+        </select>
+     </section>
+
+     <section id="tres">
+        <fieldset class="check">
+            <legend>Equipamento del auto</legend>
+            <input id="equipo1" type="checkbox" name="estereo" value="estereo">
+            <label for="equipo1">Estéreo</label><br>
+            <input id="equipo2" type="checkbox" name="buffers" value="buffers">
+            <label for="equipo2">Buffers</label><br>
+            <input id="equipo3" type="checkbox" name="asientos" value="asientos">
+            <label for="equipo3">Asientos de piel</label><br>
+        </fieldset>
+     </section>
+
+     <section id="cuatro">
+        <fieldset class="check">
+            <legend>Meses sin Intereses</legend>
+            <input type="radio" id="primero" name="meses" value="8">
+            <label for="primero">8 meses sin intereses</label><br>
+            <input type="radio" id="segundo" name="meses" value="12">
+            <label for="segundo">12 meses sin intereses</label><br>
+            <input type="radio" id="tercero" name="meses" value="24">
+            <label for="tercero">24 meses sin intereses</label><br>
+        </fieldset>
+     </section>
+   </fieldset>
+</div>
+</body>
+</html>

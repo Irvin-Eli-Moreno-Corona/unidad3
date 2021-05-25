@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    width: 800px;
+    background-color:rgb(255, 193, 79);
+    border: turquoise solid 3px;
+    margin: auto;
+}
+
+nav{
+    background-color: black;
+    height: 40px;
+    padding: 10px;
+}
+
+a{
+    color:chartreuse;
+    text-decoration: none;
+    margin: 10px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+#fondo{
+    background-image: url(/fondo.jpg);
+    opacity: 90%;
+    width: 200px;
+}
+
+#space{
+    background-image: url(/imagen2.jpg);
+    opacity: 90%;
+    width: 300px;
+}

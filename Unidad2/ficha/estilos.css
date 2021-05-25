@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightsteelblue;
+}
+
+.contenedor{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid white;
+    box-shadow: 6px 6px 6px black;
+    perspective: 600px;
+}
+
+.elemento{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s;
+}
+
+.elemento:hover{
+    transform: rotateX(180deg);
+}
+
+.parte{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 20px;
+}
+
+.atras{
+    background-color: lightgreen;
+    transform: rotateX(180deg);
+}
+
+.info{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

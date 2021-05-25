@@ -1,0 +1,43 @@
+.contenedor{
+    width: 700px;
+    height: 500px;
+}
+
+#uno, #dos{
+    background-color:rgb(120, 188, 190);
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid brown;
+}
+
+#dos{
+    position: absolute;
+    bottom: 253px;
+    left: 360px;
+}
+
+#tres, #cuatro{
+    background-color:rgb(120, 188, 190);
+    width: 300px;
+    height: 110px;
+    padding: 10px;
+    border: 2px solid brown;
+    margin-top: 20px;
+}
+
+#cuatro{
+    position: absolute;
+    bottom: 99px;
+    left: 360px;
+}
+
+legend{
+    background-color: gray;
+    color: white;
+}
+
+#principal{
+    background-color: rgb(207, 205, 205);
+}
+

@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, rgb(22, 245, 241), rgb(53, 102, 165 ));
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 8px;
+    font-weight: 100;
+    font-size: 25px;
+    background-color: rgb(243, 42, 42);
+    color: white;
+}
+
+.contenedor{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 3px solid white;
+    box-shadow: 6px 6px 6px black;
+    perspective: 600px;
+}
+
+#cont1, #cont2, #cont8{
+    width: 350px;
+    height: 350px;
+}
+
+#cont3, #cont4, #cont5, #cont7{
+    width: 500px;
+    height: 350px;
+}
+
+#cont6{
+    width: 350px;
+    height: 350px;
+}
+
+.elemento{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s;
+}
+
+#ele1:hover, #ele2:hover{
+    transform: rotateY(-180deg);
+}
+
+#ele3:hover, #ele5:hover{
+    transform: rotateX(-180deg);
+}
+
+#ele4:hover, #ele7:hover{
+    transform: rotateX(180deg);
+}
+
+#ele8:hover, #ele6:hover{
+    transform: rotateY(180deg);
+}
+
+.parte{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.info{
+    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Concert One', cursive;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 15px;
+    font-family: 'Coda Caption', sans-serif;
+    font-weight: 600;
+}
+
+.atras{
+    text-align: center;
+}
+
+#at1{
+    background-image: linear-gradient(rgb(255, 144, 255), rgb(167, 4, 167));
+    transform: rotateY(-180deg);
+}
+
+#at2{
+    background-image: linear-gradient(yellow, rgb(255, 217, 0));
+    transform: rotateY(-180deg);
+}
+
+#at3, #at5{
+    background-image: linear-gradient(rgb(17, 249, 161), rgb(6, 177, 6));
+    transform: rotateX(-180deg);
+}
+
+#at4, #at7{
+    background-image: linear-gradient(rgb(255, 144, 255), rgb(167, 4, 167));
+    transform: rotateX(180deg);
+}
+
+#at6{
+    background-image: linear-gradient(rgb(249, 86, 86), red);
+    transform: rotateY(180deg);
+}
+
+#at8{
+    background-image: linear-gradient(yellow, rgb(255, 217, 0));
+    transform: rotateY(180deg);
+}
+.info{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont1{
+    position: absolute;
+    left: 270px;
+    top: 60px;
+}
+
+#cont2{
+    position: absolute;
+    right: 270px;
+    top: 450px;
+}
+
+#cont3{
+    position: absolute;
+    right: 200px;
+    top: 60px;
+}
+
+#cont4{
+    position: absolute;
+    left: 200px;
+    top: 450px;
+}
+
+#cont5{
+    position: absolute;
+    right: 200px;
+    top: 850px;
+}
+
+#cont6{
+    position: absolute;
+    right: 270px;
+    top: 1250px;
+}
+
+#cont7{
+    position: absolute;
+    left: 200px;
+    top: 1250px;
+}
+
+#cont8{
+    position: absolute;
+    left: 270px;
+    top: 850px;
+}
+
+footer{
+    position: absolute;
+    top: 1640px;
+    text-align: center;
+    padding: 10px;
+}
+
+h4{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    font-size: 15px;
+    color: rgb(0, 23, 128);
+}

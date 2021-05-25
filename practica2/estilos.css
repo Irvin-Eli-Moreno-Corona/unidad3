@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/practica2/rio.jpg);
+    background-position: center;
+}
+
+header{
+    position: relative;
+    background-color: rgba(241, 142, 95, 0.6);
+    height: 50px;
+    border: 2px solid rgba(216, 96, 26, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    display: block;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(178, 98, 32);
+    box-shadow: 0 3px 5px 2px rgba(240, 177, 83, 0.5);
+}
+
+nav ul ul{
+    position: absolute;
+    top: 15px;
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    position: relative;
+}
+
+.n1{
+    line-height: 1.1em;
+    padding-right: 20px;
+}
+
+.n1 ul{
+    position: absolute;
+}
+
+.n1:hover ul{
+    cursor: pointer;
+    display: block;
+    background-color: rgba(245, 119, 60, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 2px rgba(240, 177, 83, 0.5);
+    backdrop-filter: blur(50px);
+}
+
+.n1 ul li a{
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor{
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 'im vi'
+                         'au au';
+}
+
+.imagenes{
+    background-color: rgba(114, 114, 114, 0.8);
+    border-radius: 5px;
+    grid-area: im;
+    width: 98%;
+    margin-left: 10px;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 's1 s2'
+                         's3 s4'
+                         's5 s6';
+}
+
+.videos{    
+    background-color: rgba(114, 114, 114, 0.8);
+    border-radius: 5px;
+    grid-area: vi;
+    width: 98%;
+    margin-left: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;    
+    grid-template-areas: 's1 s2'
+                         's3 s4'
+                         's5 s6';
+}
+
+.audios{
+    background-color: rgba(114, 114, 114, 0.8);
+    border-radius: 5px;
+    width: 99%;
+    grid-area: au;
+    margin-left: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 's1 s2 s3 s4 s5';
+}
+
+video{
+    width: 300px;
+    height: 200px;
+}
+
+audio{
+    width: 250px;
+}
+
+h3{
+    background-color: rgb(59, 59, 59);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+    width: 100%;
+    grid-column: s1 / span s2;
+    color: white;
+}
+
+#im1, #vi1{
+    grid-area: s3;
+}
+
+#im2, #vi2{
+    grid-area: s4;
+}
+
+#im3, #vi3{
+    grid-area: s5;
+}
+
+#im4, #vi4{
+    grid-area: s6;
+}
+
+#imenu{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+@media(max-width:600px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: rgba(245, 119, 60, 0.6);
+        width: 30%;
+        top: 100%;
+        right: 0;
+        margin-right: -45%;
+        color: white;
+    }
+
+    #btn-menu, #imenu{
+        position: absolute;
+        right: 10px;
+    }
+
+    .n1:hover ul{
+        right: 97%;
+    }
+
+    body{
+        background-image: url(/practica2/rio.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    .contenedor{
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        grid-template-areas: 'im'
+                             'vi'
+                             'au';
+        justify-content: center;
+    }
+
+    .imagenes{
+        background-color: rgba(114, 114, 114, 0.8);
+        border-radius: 5px;
+        grid-area: im;
+        width: 98%;
+        margin-left: 10px;
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        grid-template-areas: 's1'
+                             's2'
+                             's3'
+                             's4'
+                             's5';
+        margin-bottom: 50px;
+    }
+
+    .videos{    
+        background-color: rgba(114, 114, 114, 0.8);
+        border-radius: 5px;
+        grid-area: vi;
+        width: 98%;
+        margin-left: 10px;
+        padding: 10px;
+        display: grid;
+        gap: 10px;    
+        grid-template-areas: 's1'
+                             's2'
+                             's3'
+                             's4'
+                             's5';
+        margin-bottom: 50px;
+    }
+
+    .audios{
+        background-color: rgba(114, 114, 114, 0.8);
+        border-radius: 5px;
+        width: 98%;
+        grid-area: au;
+        margin-left: 10px;
+        padding: 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 's1'
+                             's2'
+                             's3'
+                             's4'
+                             's5';
+    }
+
+    audio{
+        width: 300px;
+    }
+
+    h3{
+        grid-area: s1;
+    }
+
+    #im1, #vi1{
+        grid-area: s2;
+    }
+    
+    #im2, #vi2{
+        grid-area: s3;
+    }
+    
+    #im3, #vi3{
+        grid-area: s4;
+    }
+    
+    #im4, #vi4{
+        grid-area: s5;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-bottom: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+        transition: 0.5s;
+    }
+}

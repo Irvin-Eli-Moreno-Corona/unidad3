@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+}
+
+table{
+    width: 800px;
+    border: black solid 3px;
+    margin: auto;
+}
+
+nav{
+    background-color: rgb(63, 63, 248);
+    height: 40px;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 800;
+}
+
+#fondo{
+    background-image: url(/Unidad1/fondo2.jpg);
+    opacity: 90%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+h2{
+    margin-top: 15px;
+    text-align: center;
+    color:white;
+}
+
+h4{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+ul{
+    text-align: center;
+    margin-top: 20px;
+    color:  white;
+}
+
+h3{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.colum{
+    border: black solid 2px;
+    background-color: rgb(255, 134, 113);
+}
+
+#icono{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.Plantas{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.imag{
+    border: black solid 2px;
+    background-color: rgb(255, 255, 154);
+}
